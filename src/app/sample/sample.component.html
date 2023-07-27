@@ -1,0 +1,13 @@
+
+<div class="container mt-5">
+  <button (click)="addCircle()" class="btn btn-primary">Add Circle</button>
+<div class="circle-container">
+  <div *ngFor="let circle of circles" class="circle" [ngStyle]="{'background-color': circle.isActive ? 'red' : 'blue'}"
+    (click)="toggleCircleState(circle)">
+  </div>
+</div>
+<p>Red Color Counter: {{ commonCounter }}</p>
+</div>
+
+
+
